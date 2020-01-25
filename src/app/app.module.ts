@@ -7,6 +7,7 @@ import { User7Component } from './user7/user7.component';
 import { Users8Component } from './users8/users8.component';
 import { UserComponent } from './user/user.component';
 import { UsersComponent } from './users/users.component';
+import { AddItemComponent } from './add-item/add-item.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { UsersComponent } from './users/users.component';
     User7Component,
     Users8Component,
     UserComponent,
-    UsersComponent
+    UsersComponent,
+    AddItemComponent
   ],
   imports: [
     BrowserModule
