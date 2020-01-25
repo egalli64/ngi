@@ -3,14 +3,14 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { HelloComponent } from './hello/hello.component';
-import { UserComponent } from './user/user.component';
+import { User7Component } from './user7/user7.component';
 import { UsersComponent } from './users/users.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HelloComponent,
-    UserComponent,
+    User7Component,
     UsersComponent
   ],
   imports: [
