@@ -1,11 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-users8',
-  templateUrl: './users8.component.html',
-  styleUrls: ['./users8.component.css']
+  selector: 'app-users08',
+  templateUrl: './users08.component.html',
+  styleUrls: ['./users08.component.css']
 })
-export class Users8Component implements OnInit {
+export class Users08Component implements OnInit {
   names: string[];
 
   constructor() {
@@ -14,5 +14,4 @@ export class Users8Component implements OnInit {
 
   ngOnInit() {
   }
-
 }
