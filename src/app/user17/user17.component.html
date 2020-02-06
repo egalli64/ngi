@@ -1,0 +1,19 @@
+<span>{{ user.name }}: {{ user.likes }}</span>
+<div>
+    <div *ngIf="user.likes % 2" [ngStyle]="{color: 'blue'}">
+        Odd number of likes
+        <span ngNonBindable>{{unbound}}</span>
+    </div>
+
+    <div [ngSwitch]="user.name">
+        <span *ngSwitchCase="'Tom'" [ngClass]="{zzz: true}">
+            Hi
+        </span>
+        <span *ngSwitchCase="'Bob'" [ngClass]="{zzz: false}">
+            Hello
+        </span>
+        <span *ngSwitchDefault>Good morning</span>
+        {{user.name}}
+    </div>
+    <button (click)="plusOne();">Like</button>
+</div>
