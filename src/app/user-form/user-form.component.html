@@ -1,0 +1,14 @@
+<h2>Template Driven Form</h2>
+<form #userForm="ngForm">
+    <div>
+        <label for="name">Name</label>
+        <input id="name" required [(ngModel)]="model.name" name="name">
+    </div>
+
+    <div>
+        <label for="likes">Likes</label>
+        <input type="number" id="likes" [(ngModel)]="model.likes" name="likes">
+    </div>
+
+    <button (click)="submit();">Submit</button>
+</form>

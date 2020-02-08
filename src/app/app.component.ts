@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 
+import { User } from './user.model';
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -7,4 +9,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Welcome Angular!';
+
+  addUser(user: User) {
+    console.log(user);
+  }
 }
