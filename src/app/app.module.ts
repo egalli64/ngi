@@ -13,6 +13,7 @@ import { Users08Component } from './users08/users08.component';
 import { Users09Component } from './users09/users09.component';
 import { Users15Component } from './users15/users15.component';
 import { Users17Component } from './users17/users17.component';
+import { Users25Component } from './users25/users25.component';
 import { AddItemComponent } from './add-item/add-item.component';
 import { UserFormComponent } from './user-form/user-form.component';
 import { UserRFormComponent } from './user-rform/user-rform.component';
@@ -28,8 +29,9 @@ import { UserRFormComponent } from './user-rform/user-rform.component';
     Users08Component,
     Users09Component,
     Users15Component,
-    AddItemComponent,
     Users17Component,
+    Users25Component,
+    AddItemComponent,
     UserFormComponent,
     UserRFormComponent
   ],
