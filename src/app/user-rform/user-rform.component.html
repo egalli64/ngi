@@ -1,0 +1,14 @@
+<h2>Reactive Form</h2>
+<form [formGroup]="fUser">
+    <div>
+        <label for="name">Name</label>
+        <input formControlName="name">
+    </div>
+
+    <div>
+        <label for="likes">Likes</label>
+        <input type="number" formControlName="likes">
+    </div>
+
+    <button (click)="submit(fUser.value);">Submit</button>
+</form>

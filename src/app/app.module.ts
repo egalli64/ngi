@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
+import { ReactiveFormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { HelloComponent } from './hello/hello.component';
@@ -14,6 +15,7 @@ import { Users15Component } from './users15/users15.component';
 import { Users17Component } from './users17/users17.component';
 import { AddItemComponent } from './add-item/add-item.component';
 import { UserFormComponent } from './user-form/user-form.component';
+import { UserRFormComponent } from './user-rform/user-rform.component';
 
 @NgModule({
   declarations: [
@@ -28,11 +30,13 @@ import { UserFormComponent } from './user-form/user-form.component';
     Users15Component,
     AddItemComponent,
     Users17Component,
-    UserFormComponent
+    UserFormComponent,
+    UserRFormComponent
   ],
   imports: [
     BrowserModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
