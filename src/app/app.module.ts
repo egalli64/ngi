@@ -2,6 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { ReactiveFormsModule } from '@angular/forms';
+import { RouterModule } from '@angular/router';
 
 import { AppComponent } from './app.component';
 import { HelloComponent } from './hello/hello.component';
@@ -17,6 +18,9 @@ import { Users25Component } from './users25/users25.component';
 import { AddItemComponent } from './add-item/add-item.component';
 import { UserFormComponent } from './user-form/user-form.component';
 import { UserRFormComponent } from './user-rform/user-rform.component';
+import { Routing1Component } from './routing1/routing1.component';
+import { Routing2Component } from './routing2/routing2.component';
+import { Routing3Component } from './routing3/routing3.component';
 
 @NgModule({
   declarations: [
@@ -33,12 +37,16 @@ import { UserRFormComponent } from './user-rform/user-rform.component';
     Users25Component,
     AddItemComponent,
     UserFormComponent,
-    UserRFormComponent
+    UserRFormComponent,
+    Routing1Component,
+    Routing2Component,
+    Routing3Component
   ],
   imports: [
     BrowserModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    RouterModule
   ],
   providers: [],
   bootstrap: [AppComponent]
