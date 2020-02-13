@@ -2,7 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { ReactiveFormsModule } from '@angular/forms';
-import { RouterModule } from '@angular/router';
+import { RouterModule, Routes } from '@angular/router';
 
 import { AppComponent } from './app.component';
 import { HelloComponent } from './hello/hello.component';
@@ -21,6 +21,21 @@ import { UserRFormComponent } from './user-rform/user-rform.component';
 import { Routing1Component } from './routing1/routing1.component';
 import { Routing2Component } from './routing2/routing2.component';
 import { Routing3Component } from './routing3/routing3.component';
+
+const appRoutes: Routes = [
+  {
+    path: 'one',
+    component: Routing1Component
+  },
+  {
+    path: 'two',
+    component: Routing2Component
+  },
+  {
+    path: 'three',
+    component: Routing3Component
+  }
+];
 
 @NgModule({
   declarations: [
@@ -46,7 +61,9 @@ import { Routing3Component } from './routing3/routing3.component';
     BrowserModule,
     FormsModule,
     ReactiveFormsModule,
-    RouterModule
+    RouterModule.forRoot(
+      appRoutes
+    )
   ],
   providers: [],
   bootstrap: [AppComponent]
