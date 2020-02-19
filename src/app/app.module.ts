@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { ReactiveFormsModule } from '@angular/forms';
 import { RouterModule, Routes } from '@angular/router';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
 import { HelloComponent } from './hello/hello.component';
@@ -21,6 +22,7 @@ import { UserRFormComponent } from './user-rform/user-rform.component';
 import { Routing1Component } from './routing1/routing1.component';
 import { Routing2Component } from './routing2/routing2.component';
 import { Routing3Component } from './routing3/routing3.component';
+import { MyHttpComponent } from './my-http/my-http.component';
 
 const appRoutes: Routes = [
   {
@@ -55,7 +57,8 @@ const appRoutes: Routes = [
     UserRFormComponent,
     Routing1Component,
     Routing2Component,
-    Routing3Component
+    Routing3Component,
+    MyHttpComponent
   ],
   imports: [
     BrowserModule,
@@ -63,7 +66,8 @@ const appRoutes: Routes = [
     ReactiveFormsModule,
     RouterModule.forRoot(
       appRoutes
-    )
+    ),
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
