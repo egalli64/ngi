@@ -7,7 +7,7 @@ import { HttpClient } from '@angular/common/http';
   styleUrls: ['./my-http.component.css']
 })
 export class MyHttpComponent implements OnInit {
-  data: Object;
+  message: String;
   loaded: boolean;
   http: HttpClient;
 
@@ -20,7 +20,7 @@ export class MyHttpComponent implements OnInit {
     this.loaded = false;
     this.http.get('http://localhost:3000/hello').subscribe(
       data => {
-        this.data = data;
+        this.message = data['message'];
         this.loaded = true;
       }
     );
