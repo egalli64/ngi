@@ -18,13 +18,12 @@ export class MyHttpComponent implements OnInit {
 
   makeRequest(): void {
     this.loaded = false;
-    this.http.get('http://localhost:3000/hello').subscribe(data => {
-      this.data = data;
-
-      
-
-      this.loaded = true;
-    });
+    this.http.get('http://localhost:3000/hello').subscribe(
+      data => {
+        this.data = data;
+        this.loaded = true;
+      }
+    );
   }
 
   ngOnInit() {
