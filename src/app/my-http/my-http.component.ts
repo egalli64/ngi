@@ -7,24 +7,28 @@ import { HttpClient } from '@angular/common/http';
   styleUrls: ['./my-http.component.css']
 })
 export class MyHttpComponent implements OnInit {
-  message: String;
-  loaded: boolean;
-  http: HttpClient;
+  readonly url: string = 'http://localhost:8080/hello';
+  message: string;
+  answered: boolean = false;
 
-  constructor(http: HttpClient) {
-    this.http = http;
-    this.loaded = true;
+  constructor(private http: HttpClient) {
+    this.answered = true;
   }
 
   makeRequest(): void {
-    this.loaded = false;
-    this.http.get('http://localhost:3000/hello').subscribe(
+    this.answered = false;
+    this.message = '';
+    this.http.get(this.url).subscribe(
       data => {
         this.message = data['message'];
-        this.loaded = true;
+        this.answered = true;
+      },
+      error => {
+        this.message = error.message;
+        this.answered = true;
       }
     );
-  }
+  };
 
   ngOnInit() {
   }
