@@ -23,6 +23,7 @@ import { Routing1Component } from './routing1/routing1.component';
 import { Routing2Component } from './routing2/routing2.component';
 import { Routing3Component } from './routing3/routing3.component';
 import { MyHttpComponent } from './my-http/my-http.component';
+import { CoderComponent } from './coder/coder.component';
 
 const appRoutes: Routes = [
   {
@@ -58,7 +59,8 @@ const appRoutes: Routes = [
     Routing1Component,
     Routing2Component,
     Routing3Component,
-    MyHttpComponent
+    MyHttpComponent,
+    CoderComponent
   ],
   imports: [
     BrowserModule,

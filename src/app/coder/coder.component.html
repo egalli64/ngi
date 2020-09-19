@@ -1,0 +1,16 @@
+<table>
+    <tr>
+        <th scope="col">id</th>
+        <th scope="col">first name</th>
+        <th scope="col">last name</th>
+        <th scope="col">hire date</th>
+        <th scope="col">salary</th>
+    </tr>
+    <tr *ngFor="let coder of coders">
+        <td>{{ coder.id }}</td>
+        <td>{{ coder.firstName }}</td>
+        <td>{{ coder.lastName }}</td>
+        <td>{{ coder.hireDate }}</td>
+        <td>{{ coder.salary }}</td>
+    </tr>
+</table>
