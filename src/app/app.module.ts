@@ -23,7 +23,8 @@ import { Routing1Component } from './routing1/routing1.component';
 import { Routing2Component } from './routing2/routing2.component';
 import { Routing3Component } from './routing3/routing3.component';
 import { MyHttpComponent } from './my-http/my-http.component';
-import { CoderComponent } from './coder/coder.component';
+import { CoderGetAllComponent } from './coder-get-all/coder-get-all.component';
+import { CoderSaveComponent } from './coder-save/coder-save.component';
 
 const appRoutes: Routes = [
   {
@@ -60,7 +61,8 @@ const appRoutes: Routes = [
     Routing2Component,
     Routing3Component,
     MyHttpComponent,
-    CoderComponent
+    CoderGetAllComponent,
+    CoderSaveComponent
   ],
   imports: [
     BrowserModule,

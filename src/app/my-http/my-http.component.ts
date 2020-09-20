@@ -19,12 +19,12 @@ export class MyHttpComponent implements OnInit {
     this.answered = false;
     this.message = '';
     this.http.get(this.url).subscribe(
-      data => {
-        this.message = data['message'];
+      res => {
+        this.message = res['message'];
         this.answered = true;
       },
-      error => {
-        this.message = error.message;
+      err => {
+        this.message = err['message'];
         this.answered = true;
       }
     );

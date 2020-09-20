@@ -7,7 +7,7 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class CoderService {
-  private url: string = 'http://localhost:8080/coders';
+  readonly url: string = 'http://localhost:8080/coders';
 
   constructor(private http: HttpClient) {
   }
@@ -16,7 +16,7 @@ export class CoderService {
     return this.http.get<Coder[]>(this.url);
   }
 
-  public save(coder: Coder) {
+  public save(coder: Coder): Observable<Coder> {
     return this.http.post<Coder>(this.url, coder);
   }
 }

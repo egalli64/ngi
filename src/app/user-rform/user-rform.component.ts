@@ -9,7 +9,7 @@ import { User } from '../user.model'
   styleUrls: ['./user-rform.component.css']
 })
 export class UserRFormComponent implements OnInit {
-  fUser: FormGroup;
+  private fUser: FormGroup;
 
   constructor(fb: FormBuilder) { 
     this.fUser = fb.group(new User('Kim', 12));

@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { CoderComponent } from './coder.component';
+import { CoderGetAllComponent } from './coder-get-all.component';
 
-describe('CoderComponent', () => {
-  let component: CoderComponent;
-  let fixture: ComponentFixture<CoderComponent>;
+describe('CoderGetAllComponent', () => {
+  let component: CoderGetAllComponent;
+  let fixture: ComponentFixture<CoderGetAllComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ CoderComponent ]
+      declarations: [ CoderGetAllComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(CoderComponent);
+    fixture = TestBed.createComponent(CoderGetAllComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
