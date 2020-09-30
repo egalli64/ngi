@@ -10,8 +10,12 @@ import { User } from '../user.model'
 export class User17Component implements OnInit {
   @Input() user: User;
   @Output() liked: EventEmitter<User>;
+  back: boolean;
 
-  constructor() { this.liked = new EventEmitter(); }
+  constructor() {
+    this.liked = new EventEmitter();
+    this.back = true;
+  }
 
   ngOnInit() {
   }
@@ -20,4 +24,8 @@ export class User17Component implements OnInit {
     this.user.likes += 1;
     this.liked.emit(this.user);
   }
+
+  swapBack() {
+    this.back = !this.back;
+  }  
 }

@@ -6,14 +6,11 @@
     </div>
 
     <div [ngSwitch]="user.name">
-        <span *ngSwitchCase="'Tom'" [ngClass]="{zzz: true}">
-            Hi
-        </span>
-        <span *ngSwitchCase="'Bob'" [ngClass]="{zzz: false}">
-            Hello
-        </span>
-        <span *ngSwitchDefault>Good morning</span>
-        {{user.name}}
+        <span *ngSwitchCase="'Tom'">Hi </span>
+        <span *ngSwitchCase="'Bob'">Hello </span>
+        <span *ngSwitchDefault>Good morning </span>
+        <span [ngClass]="{aqua: back}">{{user.name}}</span>
     </div>
-    <button (click)="plusOne();">Like</button>
+    <button (click)="plusOne()">Like</button>
+    <button (click)="swapBack()">Swap Background</button>
 </div>
