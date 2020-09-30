@@ -15,7 +15,9 @@ export class UserFormComponent implements OnInit {
     this.model = new User('Bill', 42);
   }
 
-  submit() { this.out.emit(this.model); }
+  submit() {
+    this.out.emit(this.model);
+  }
 
   ngOnInit() { }
 }
