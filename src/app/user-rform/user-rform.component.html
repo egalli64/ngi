@@ -1,5 +1,5 @@
 <h2>Reactive Form</h2>
-<form [formGroup]="fUser">
+<form [formGroup]="fUser" (ngSubmit)="submit(fUser.value)">
     <div>
         <label>Name <input formControlName="name"></label>
     </div>
@@ -8,5 +8,5 @@
         <label>Likes <input type="number" formControlName="likes"></label>
     </div>
 
-    <button (click)="submit(fUser.value);">Submit</button>
+    <button>Submit</button>
 </form>
