@@ -9,13 +9,12 @@ import { HttpClient } from '@angular/common/http';
 export class MyHttpComponent implements OnInit {
   readonly url: string = 'http://localhost:8080/hello';
   message: string;
-  answered: boolean = false;
+  answered: boolean = true;
 
   constructor(private http: HttpClient) {
-    this.answered = true;
   }
 
-  makeRequest(): void {
+  request(): void {
     this.answered = false;
     this.message = '';
     this.http.get(this.url).subscribe(
