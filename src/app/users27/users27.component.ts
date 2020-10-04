@@ -4,11 +4,11 @@ import { UsersService } from '../users.service';
 import { User } from '../user.model'
 
 @Component({
-  selector: 'app-users25',
-  templateUrl: './users25.component.html',
-  styleUrls: ['./users25.component.css']
+  selector: 'app-users27',
+  templateUrl: './users27.component.html',
+  styleUrls: ['./users27.component.css']
 })
-export class Users25Component implements OnInit {
+export class Users27Component implements OnInit {
   users: Array<User>;
 
   constructor(us: UsersService) {
