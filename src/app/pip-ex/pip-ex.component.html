@@ -26,3 +26,8 @@
 <h3>Chaining pipes</h3>
 
 <p>Piped (date and uppercase) today is {{ today | date | uppercase }}</p>
+
+<h3>Custom pipe</h3>
+
+<p>Piped (default my) dessert is {{ dessert | my }}</p>
+<p>Piped (asterisk) dessert is {{ dessert | my : '*' }}</p>
