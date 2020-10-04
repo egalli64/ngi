@@ -1,0 +1,28 @@
+<h2>Pipes</h2>
+
+<p>Today is {{ today }}</p>
+<p>Piped (default date) today is {{ today | date }}</p>
+
+<h3>Parametrized pipe</h3>
+
+<p>Balance is {{ balance }}</p>
+<p>Piped (default currency) balance is {{ balance | currency }}</p>
+<p>Piped (Euro) balance is {{ balance | currency : 'EUR' }}</p>
+<p>Piped (Pound sterling) balance is {{ balance | currency:'GBP' }}</p>
+
+<h3>Switching parameter on a pipe</h3>
+
+<div>
+    <button (click)="switchDateFormat()">Change date format</button>
+    Piped (full / short) today is {{ today | date : dateFormat }}
+</div>
+
+<h3>More parameters on a pipe</h3>
+
+<p>Dessert is {{ dessert }}</p>
+<p>Piped (default slice) dessert is {{ dessert | slice }}</p>
+<p>Piped (3, 6) dessert is {{ dessert | slice : 3 : 6 }}</p>
+
+<h3>Chaining pipes</h3>
+
+<p>Piped (date and uppercase) today is {{ today | date | uppercase }}</p>

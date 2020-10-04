@@ -25,6 +25,7 @@ import { Routing3Component } from './routing3/routing3.component';
 import { MyHttpComponent } from './my-http/my-http.component';
 import { CoderGetAllComponent } from './coder-get-all/coder-get-all.component';
 import { CoderSaveComponent } from './coder-save/coder-save.component';
+import { PipExComponent } from './pip-ex/pip-ex.component';
 
 const appRoutes: Routes = [
   {
@@ -62,7 +63,8 @@ const appRoutes: Routes = [
     Routing3Component,
     MyHttpComponent,
     CoderGetAllComponent,
-    CoderSaveComponent
+    CoderSaveComponent,
+    PipExComponent
   ],
   imports: [
     BrowserModule,
