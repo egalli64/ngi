@@ -1,12 +1,17 @@
 import { TestBed } from '@angular/core/testing';
-
+import { HttpClientModule } from '@angular/common/http';
 import { CoderService } from './coder.service';
 
 describe('CodersService', () => {
-  beforeEach(() => TestBed.configureTestingModule({}));
+  let service: CoderService;
+
+  beforeEach(() => TestBed.configureTestingModule({
+    imports: [HttpClientModule],
+    providers: [CoderService]
+  }));
 
   it('should be created', () => {
-    const service: CoderService = TestBed.get(CoderService);
+    service = TestBed.inject(CoderService);
     expect(service).toBeTruthy();
   });
 });

@@ -1,5 +1,6 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { HttpClientTestingModule } from '@angular/common/http/testing';
+import { ReactiveFormsModule } from '@angular/forms'
 import { CoderSaveComponent } from './coder-save.component';
 
 describe('CoderSaveComponent', () => {
@@ -8,10 +9,9 @@ describe('CoderSaveComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [HttpClientTestingModule],
-      providers: [ CoderSaveComponent ]
-    })
-    .compileComponents();
+      imports: [HttpClientTestingModule, ReactiveFormsModule],
+      providers: [CoderSaveComponent]
+    }).compileComponents();
   });
 
   beforeEach(() => {

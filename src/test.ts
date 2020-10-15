@@ -16,14 +16,10 @@ getTestBed().initTestEnvironment(
 );
 
 // Then we find all the tests.
-// const context = require.context('./', true, /\.spec\.ts$/);
+const context = require.context('./', true, /\.spec\.ts$/);
 
 // Alternative: just a single component (...)
-// const context = require.context('./', true, /my-http\.component\.spec\.ts$/);
-
-// Alternative: just a single service (...)
-const context = require.context('./', true, /coder\.service\.spec\.ts$/);
-
+// const context = require.context('./', true, /user-rform\.component\.spec\.ts$/);
 
 // And load the modules.
 context.keys().map(context);
