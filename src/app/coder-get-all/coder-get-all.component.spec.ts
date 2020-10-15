@@ -1,5 +1,5 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-
+import { HttpClientTestingModule } from '@angular/common/http/testing';
 import { CoderGetAllComponent } from './coder-get-all.component';
 
 describe('CoderGetAllComponent', () => {
@@ -8,9 +8,9 @@ describe('CoderGetAllComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ CoderGetAllComponent ]
-    })
-    .compileComponents();
+      imports: [HttpClientTestingModule],
+      providers: [CoderGetAllComponent]
+    }).compileComponents();
   });
 
   beforeEach(() => {

@@ -1,4 +1,5 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { User } from '../user.model';
 
 import { User17Component } from './user17.component';
 
@@ -16,6 +17,7 @@ describe('User17Component', () => {
   beforeEach(() => {
     fixture = TestBed.createComponent(User17Component);
     component = fixture.componentInstance;
+    component.user = new User('Bob', 42);
     fixture.detectChanges();
   });
 
