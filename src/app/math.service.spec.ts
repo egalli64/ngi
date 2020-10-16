@@ -20,7 +20,13 @@ describe('MathService', () => {
     expect(result).toBe(-42);
   });
 
-  it('is not yet implemented', () => {
+  it('should fail, by intentional mistake', () => {
+    const result = service.negate(42);
+
+    expect(result).toBe(42);
+  });
+
+  it('should be skipped', () => {
     pending();
   });
 });
