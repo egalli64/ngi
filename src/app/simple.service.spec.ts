@@ -1,6 +1,6 @@
 import { TestBed } from '@angular/core/testing';
 
-import { MathService } from './math.service';
+import { MathService } from './simple.service';
 
 describe('MathService', () => {
   let service: MathService;
