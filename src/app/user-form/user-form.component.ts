@@ -10,6 +10,7 @@ import { User } from '../user.model'
 export class UserFormComponent implements OnInit {
   @Output() out = new EventEmitter<User>();
   model: User;
+  submitted = false;
 
   constructor() {
     this.model = new User('Bill', 42);
@@ -17,6 +18,8 @@ export class UserFormComponent implements OnInit {
 
   submit() {
     this.out.emit(this.model);
+    this.submitted = true;
+    setTimeout(() => { this.submitted = false; }, 1000);
   }
 
   ngOnInit() { }
