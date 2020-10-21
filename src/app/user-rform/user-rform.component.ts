@@ -9,13 +9,15 @@ import { User } from '../user.model'
   styleUrls: ['./user-rform.component.css']
 })
 export class UserRFormComponent implements OnInit {
-  private fUser: FormGroup;
+  public fUser: FormGroup;
 
   constructor(fb: FormBuilder) { 
     this.fUser = fb.group(new User('Kim', 12));
   }
 
-  submit(user: User) { console.log(user); }
+  submit() {
+    console.log(this.fUser.value);
+  }
 
   ngOnInit() {
   }

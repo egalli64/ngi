@@ -1,7 +1,7 @@
 <h2>Reactive Form</h2>
-<form [formGroup]="fUser" (ngSubmit)="submit(fUser.value)">
+<form [formGroup]="fUser" (ngSubmit)="submit()">
     <div>
-        <label>Name <input formControlName="name"></label>
+        <label>Name <input formControlName="name" readonly></label>
     </div>
 
     <div>

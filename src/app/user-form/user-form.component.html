@@ -1,5 +1,5 @@
 <h2>Template Driven Form</h2>
-<form (ngSubmit)=submit()>
+<form (ngSubmit)=submit() #myForm="ngForm">
     <div>
         <label for="name">Name</label>
         <input id="name" name="name" required [(ngModel)]="model.name">

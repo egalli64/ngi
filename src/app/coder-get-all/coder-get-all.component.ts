@@ -8,7 +8,7 @@ import { CoderService } from '../coder.service';
   styleUrls: ['./coder-get-all.component.css']
 })
 export class CoderGetAllComponent implements OnInit {
-  private coders: Coder[];
+  public coders: Coder[];
 
   constructor(private svc: CoderService) { }
 
