@@ -1,0 +1,13 @@
+<h2>Attribute directives</h2>
+
+<div>
+    <div [ngClass]="myClasses">This text is styled via NgClass directive</div>
+    <div [ngStyle]="myStyles">This text is styled via NgStyle directive</div>
+    <button (click)="shuffle()">Shuffle</button>
+</div>
+
+<div>
+    <div [class.bold]="isBold">This text is styled via class binding</div>
+    <div [style.font-weight]="isBold ? 'bold' : 'normal'">This text is styled via style binding</div>
+    <button (click)="swap()">Swap</button>
+</div>

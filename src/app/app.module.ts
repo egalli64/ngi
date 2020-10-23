@@ -28,6 +28,8 @@ import { CoderSaveComponent } from './coder-save/coder-save.component';
 import { PipExComponent } from './pip-ex/pip-ex.component';
 import { MyPipe } from './my.pipe';
 import { SimpleComponent } from './simple/simple.component';
+import { DirStrutComponent } from './dir-strut/dir-strut.component';
+import { DirAttrComponent } from './dir-attr/dir-attr.component';
 
 const appRoutes: Routes = [
   {
@@ -68,7 +70,9 @@ const appRoutes: Routes = [
     CoderSaveComponent,
     PipExComponent,
     MyPipe,
-    SimpleComponent
+    SimpleComponent,
+    DirStrutComponent,
+    DirAttrComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,27 @@
+<h2>Structural directives</h2>
+
+<h3>Repeat an element</h3>
+<ul>
+    <li *ngFor="let name of names">{{name}}</li>
+</ul>
+
+<h3>Element added to DOM conditionally</h3>
+<ul>
+    <li *ngFor="let value of values">
+        <span>{{value}} is </span>
+        <span *ngIf="value % 2">odd</span>
+        <span *ngIf="value % 2 == 0">even</span>
+    </li>
+</ul>
+
+<h3>Choose what to add from a number of options</h3>
+<ul>
+    <li *ngFor="let name of names">
+        <span [ngSwitch]="name">
+            <span *ngSwitchCase="'Kim'">Hi</span>
+            <span *ngSwitchCase="'Bob'">Hello</span>
+            <span *ngSwitchDefault>Good morning</span>
+            <span> {{name}}</span>
+        </span>
+    </li>
+</ul>
