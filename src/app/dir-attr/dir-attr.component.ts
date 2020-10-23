@@ -13,18 +13,16 @@ export class DirAttrComponent implements OnInit {
   };
 
   myStyles = {
-    'background-color': '',
-    color: '',
-    'font-weight': ''
+    'background-color': 'aqua',
+    color: 'blue',
+    'font-weight': 'bold'
   };
 
   isBold = false;
 
   constructor() { }
 
-  ngOnInit(): void {
-    this.shuffle();
-  }
+  ngOnInit(): void {}
 
   shuffle() {
     this.myClasses.back = Math.random() < .5;
