@@ -11,12 +11,12 @@ import { CoderService } from '../coder.service';
 export class CoderSaveComponent implements OnInit {
   fCoder: FormGroup;
 
-  constructor(private fb: FormBuilder, private svc: CoderService) { 
-    this.fCoder = fb.group(new Coder(0, 'Bill', 'Kates', null, 3560.23));
+  constructor(fb: FormBuilder, private svc: CoderService) { 
+    this.fCoder = fb.group(new Coder(0, '', '', new Date(), 0));
   }
 
-  submit(coder: Coder) {
-    this.svc.save(coder).subscribe(
+  save() {
+    this.svc.save(this.fCoder.value).subscribe(
       res => console.log('done', res),
       err => console.log('error', err)
     );

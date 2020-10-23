@@ -1,5 +1,5 @@
 <h2>Create New Coder</h2>
-<form [formGroup]="fCoder">
+<form [formGroup]="fCoder" (ngSubmit)="save()">
     <div>
         <label>First Name <input formControlName="firstName"></label>
     </div>
@@ -13,5 +13,5 @@
         <label>Salary <input type="number" formControlName="salary"></label>
     </div>
 
-    <button (click)="submit(fCoder.value);">Submit</button>
+    <button>Submit</button>
 </form>

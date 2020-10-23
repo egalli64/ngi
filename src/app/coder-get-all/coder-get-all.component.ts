@@ -13,12 +13,14 @@ export class CoderGetAllComponent implements OnInit {
   constructor(private svc: CoderService) { }
 
   ngOnInit(): void {
-    this.load();
+    // uncomment next line to load data at startup
+    // this.load();
   }
 
   load(): void {
-    this.svc.findAll().subscribe(data => {
-      this.coders = data;
-    });
+    this.svc.findAll().subscribe(
+      data => {
+        this.coders = data;
+      });
   }
 }
