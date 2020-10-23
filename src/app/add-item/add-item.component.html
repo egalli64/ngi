@@ -2,7 +2,5 @@
 <form>
     <input placeholder="enter id" #id>
     <input placeholder="name ..." #name>
-    <button (click)="add(id, name)">
-        OK
-    </button>
+    <button (click)="add(id.value, name.value)">OK</button>
 </form>
