@@ -31,6 +31,8 @@ import { SimpleComponent } from './simple/simple.component';
 import { DirStrutComponent } from './dir-strut/dir-strut.component';
 import { DirAttrComponent } from './dir-attr/dir-attr.component';
 import { Hello9Component } from './hello9/hello9.component';
+import { HighlightDirective } from './highlight.directive';
+import { DirCustComponent } from './dir-cust/dir-cust.component';
 
 const appRoutes: Routes = [
   {
@@ -74,7 +76,9 @@ const appRoutes: Routes = [
     SimpleComponent,
     DirStrutComponent,
     DirAttrComponent,
-    Hello9Component
+    Hello9Component,
+    HighlightDirective,
+    DirCustComponent
   ],
   imports: [
     BrowserModule,
