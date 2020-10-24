@@ -1,0 +1,3 @@
+Files generated running:
+
+ng build --prod --output-path docs --base-href /ngi/
