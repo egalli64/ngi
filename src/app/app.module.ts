@@ -30,6 +30,7 @@ import { MyPipe } from './my.pipe';
 import { SimpleComponent } from './simple/simple.component';
 import { DirStrutComponent } from './dir-strut/dir-strut.component';
 import { DirAttrComponent } from './dir-attr/dir-attr.component';
+import { Hello9Component } from './hello9/hello9.component';
 
 const appRoutes: Routes = [
   {
@@ -72,7 +73,8 @@ const appRoutes: Routes = [
     MyPipe,
     SimpleComponent,
     DirStrutComponent,
-    DirAttrComponent
+    DirAttrComponent,
+    Hello9Component
   ],
   imports: [
     BrowserModule,
