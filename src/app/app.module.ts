@@ -34,6 +34,7 @@ import { Hello9Component } from './hello9/hello9.component';
 import { HighlightDirective } from './highlight.directive';
 import { DirCustComponent } from './dir-cust/dir-cust.component';
 import { UserNewComponent } from './user-new/user-new.component';
+import { UserNew18Component } from './user-new18/user-new18.component';
 
 const appRoutes: Routes = [
   {
@@ -80,7 +81,8 @@ const appRoutes: Routes = [
     Hello9Component,
     HighlightDirective,
     DirCustComponent,
-    UserNewComponent
+    UserNewComponent,
+    UserNew18Component
   ],
   imports: [
     BrowserModule,

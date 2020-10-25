@@ -1,0 +1,8 @@
+<h2>A Template Driven Form</h2>
+
+<form (ngSubmit)="create()">
+    <input placeholder="enter name here" [(ngModel)]="user.name" name="name">
+    <input type="number" placeholder="likes" [(ngModel)]="user.likes" name="likes">
+    <button>OK</button>
+    <span *ngIf="submitted">New user created!</span>
+</form>
