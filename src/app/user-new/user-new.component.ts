@@ -7,15 +7,21 @@ import { User } from '../user.model';
   styleUrls: ['./user-new.component.css']
 })
 export class UserNewComponent implements OnInit {
-  constructor() { }
+  submitted = false;
+
+  constructor() {
+  }
 
   ngOnInit(): void {
   }
 
   create(name: string, likes: string) {
     let user: User = new User(name, parseInt(likes));
-
     console.log("New user is", user);
+
+    this.submitted = true;
+    setTimeout(() => { this.submitted = false; }, 1000);
+
     // ...
   }
 }

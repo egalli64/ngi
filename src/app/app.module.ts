@@ -35,6 +35,7 @@ import { HighlightDirective } from './highlight.directive';
 import { DirCustComponent } from './dir-cust/dir-cust.component';
 import { UserNewComponent } from './user-new/user-new.component';
 import { UserNew18Component } from './user-new18/user-new18.component';
+import { UserNew19Component } from './user-new19/user-new19.component';
 
 const appRoutes: Routes = [
   {
@@ -82,7 +83,8 @@ const appRoutes: Routes = [
     HighlightDirective,
     DirCustComponent,
     UserNewComponent,
-    UserNew18Component
+    UserNew18Component,
+    UserNew19Component
   ],
   imports: [
     BrowserModule,

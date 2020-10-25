@@ -1,6 +1,7 @@
 <h2>A simple form</h2>
 <form>
-    <input placeholder="enter name here" #name>
-    <input type="number" placeholder="likes" #likes>
+    <input placeholder="name" #name>
+    <input type="number" value="0" #likes>
     <button (click)="create(name.value, likes.value)">OK</button>
+    <span *ngIf="submitted">New user created!</span>
 </form>

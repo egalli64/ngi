@@ -1,0 +1,8 @@
+<h2>A Reactive Driven Form</h2>
+
+<form [formGroup]="fgUser" (ngSubmit)="create()">
+    <input placeholder="name" formControlName="name">
+    <input type="number" formControlName="likes">
+    <button>OK</button>
+    <span *ngIf="submitted">New user created!</span>
+</form>
