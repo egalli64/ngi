@@ -33,6 +33,7 @@ import { DirAttrComponent } from './dir-attr/dir-attr.component';
 import { Hello9Component } from './hello9/hello9.component';
 import { HighlightDirective } from './highlight.directive';
 import { DirCustComponent } from './dir-cust/dir-cust.component';
+import { UserNewComponent } from './user-new/user-new.component';
 
 const appRoutes: Routes = [
   {
@@ -78,7 +79,8 @@ const appRoutes: Routes = [
     DirAttrComponent,
     Hello9Component,
     HighlightDirective,
-    DirCustComponent
+    DirCustComponent,
+    UserNewComponent
   ],
   imports: [
     BrowserModule,
