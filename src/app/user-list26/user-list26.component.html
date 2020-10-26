@@ -1,0 +1,7 @@
+<h2>Using a service</h2>
+
+<ul>
+    <li *ngFor="let user of users">
+        <app-user-like [user]="user" (liked)="moreLikes($event)"></app-user-like>
+    </li>
+</ul>

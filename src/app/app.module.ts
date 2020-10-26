@@ -38,6 +38,7 @@ import { UserNew18Component } from './user-new18/user-new18.component';
 import { UserNew19Component } from './user-new19/user-new19.component';
 import { UserListComponent } from './user-list/user-list.component';
 import { UserLikeComponent } from './user-like/user-like.component';
+import { UserList26Component } from './user-list26/user-list26.component';
 
 const appRoutes: Routes = [
   {
@@ -88,7 +89,8 @@ const appRoutes: Routes = [
     UserNew18Component,
     UserNew19Component,
     UserListComponent,
-    UserLikeComponent
+    UserLikeComponent,
+    UserList26Component
   ],
   imports: [
     BrowserModule,
